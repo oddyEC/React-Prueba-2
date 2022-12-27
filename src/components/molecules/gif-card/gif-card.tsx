@@ -19,7 +19,6 @@ const GifCard: FC<GifCardProps> = ({ gif, onDelete }) => {
     <div className="gif-card">
       <img src={gif.url} />
       <div className="gif-card__delete-buttons">
-        <h4>¿Deseas eliminar este GIF?</h4>
         <Button text="Eliminar" onClick={handleDelete} />
       </div>
     </div>
