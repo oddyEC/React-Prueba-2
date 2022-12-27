@@ -15,10 +15,7 @@ const GifList: FC<GifListProps> = ({ gifs, onDelete }) => {
   const isEmpty = gifs.length === 0;
 
   return (
-    <div
-      className={`gif-list ${isEmpty ? "gif-list--empty" : ""}`}
-      data-testid="giflist-testid"
-    >
+    <div className={`gif-list ${isEmpty ? "gif-list--empty" : ""}`}>
       {isEmpty ? (
         <EmptyGifList />
       ) : (
